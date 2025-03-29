@@ -29,7 +29,7 @@ With a strong focus on **design** and **technology**, my goal is to empower user
 
 ### Areas of Expertise
 
-- **Frontend Development**: Specializing in [**React**](https://reactjs.org/) to build responsive, high-performance web applications that engage users and simplify tasks.
+- **Frontend Development**: Specializing in **React** to build responsive, high-performance web applications that engage users and simplify tasks.
 - **SaaS Product Development**: Designing and developing **privacy-focused, scalable**, and **AI-powered** tools that redefine productivity.
 - **Full-Stack Development**: Committed to mastering full-stack technologies by Q3 2025, with plans to expand expertise in **Swift**, **Kotlin**, and **Go** in the future.
 
