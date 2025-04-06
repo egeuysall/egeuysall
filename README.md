@@ -55,8 +55,8 @@ With a strong focus on **design** and **technology**, my goal is to empower user
 
 ### Notable Projects
 
-- [**Netflix Clone**](https://www.netflix.egeuysal.com/): A project replicating Netflix, developed as part of an academic exercise, demonstrating my ability to build user-centric platforms.
-- [**Links**](https://www.links.egeuysal.com/): An open-source, **customizable Linktree alternative** designed for privacy, responsiveness, and SEO optimization. It allows users to self-host their data, ensuring complete control and security.
+- [**Astra**](https://www.astraui.me/): A modern Next.js UI component library designed for speed, simplicity, and scalability. It offers a curated set of responsive components to help developers build high-quality apps with ease.
+- [**Links**](https://www.links.egeuysal.com/): An open-source, customizable Linktree alternative focused on privacy, responsiveness, and SEO. Links enables users to self-host their data, ensuring complete control, security, and branding flexibility.
 
 ### Let's Connect
 
