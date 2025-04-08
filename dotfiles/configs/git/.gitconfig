@@ -1,0 +1,92 @@
+[user]
+	# These values will be set by the install script
+	name = 
+	email = 
+
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	light = false
+	side-by-side = true
+	line-numbers = true
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[push]
+	default = current
+	autoSetupRemote = true
+
+[fetch]
+	prune = true
+
+[diff]
+	colorMoved = default
+
+[merge]
+	conflictstyle = diff3
+
+[color]
+	ui = auto
+
+[alias]
+	# View abbreviated SHA, description, and history graph
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	
+	# Status shorthand
+	s = status -s
+	
+	# Commit shorthand
+	c = commit
+	cm = commit -m
+	
+	# Add all and commit
+	ac = !git add -A && git commit -m
+	
+	# Quick branch switching
+	co = checkout
+	cb = checkout -b
+	
+	# Push to origin
+	po = push origin
+	
+	# Pull from origin
+	pl = pull origin
+	
+	# List branches sorted by last modified
+	b = branch --sort=-committerdate
+	
+	# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+	
+	# List contributors with number of commits
+	authors = shortlog --summary --numbered --email
+	
+	# Amend the currently staged files to the latest commit
+	amend = commit --amend --reuse-message=HEAD
+	
+	# Remove branches that have been merged with main
+	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|main' | xargs -n 1 git branch -d"
+	
+	# Show the 10 largest files in the repo
+	find-large-files = "!git ls-tree -r -l --full-name HEAD | sort -n -k 4 | tail -n 10"
+	
+	# Edit the last commit message
+	fix = commit --amend
+	
+	# Create a WIP commit
+	wip = !git add -A && git commit -m 'WIP: Work in progress'
+	
+	# Show commit stats by author
+	stats = shortlog -s -n --all --no-merges

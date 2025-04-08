@@ -1,0 +1,81 @@
+# Navigation shortcuts
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+    colorflag="--color"
+else # macOS `ls`
+    colorflag="-G"
+fi
+
+# List directory contents
+alias ls="ls ${colorflag}"
+alias ll="ls -lha ${colorflag}"
+alias la="ls -a ${colorflag}"
+alias l="ls -la ${colorflag}"
+
+# Git shortcuts
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add"
+alias gaa="git add --all"
+alias gd="git diff"
+alias gb="git branch"
+alias gco="git checkout"
+alias gp="git push"
+alias gl="git pull"
+alias gcm="git checkout main"
+alias gca="git commit --amend"
+alias glog="git log --oneline --decorate --graph"
+
+# npm shortcuts
+alias ni="npm install"
+alias nid="npm install --save-dev"
+alias nr="npm run"
+alias nrs="npm run start"
+alias nrd="npm run dev"
+alias nrb="npm run build"
+
+# pnpm shortcuts
+alias pi="pnpm install"
+alias pid="pnpm install --save-dev"
+alias pr="pnpm run"
+alias prs="pnpm run start"
+alias prd="pnpm run dev"
+alias prb="pnpm run build"
+
+# Docker shortcuts
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+alias dcr="docker-compose restart"
+
+# Editor shortcuts
+alias c="code ."
+alias cr="cursor ."
+alias ws="webstorm ."
+alias pc="pycharm ."
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+# Show/hide hidden files in Finder
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Reload shell
+alias reload="exec ${SHELL} -l"
+
+# Open applications
+alias figma="open -a Figma"
+alias obs="open -a Obsidian"
+alias ray="open -a Raycast"
+alias arc="open -a Arc"
+
+# Warp-specific shortcuts if using Warp
+alias warptheme="open ~/Library/Application\ Support/warp/themes/"
