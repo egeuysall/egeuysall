@@ -1,4 +1,4 @@
-# egeuysall's macOS Dotfiles
+# My macOS Dotfiles
 
 A modern, minimal, yet comprehensive dotfiles setup for macOS, tailored specifically for web development.
 
@@ -41,7 +41,7 @@ A modern, minimal, yet comprehensive dotfiles setup for macOS, tailored specific
 
 1. Clone this repository:
    
-   git clone https://github.com/egeuysall/dotfiles.git ~/.dotfiles
+   git clone https://github.com/egeuysall/egeuysall.git ~/.dotfiles
    cd ~/.dotfiles
 
 2. Make the setup script executable:
@@ -75,22 +75,6 @@ To update your dotfiles:
 2. Run the setup script again:
    
    ./setup.sh
-
-## Structure
-
-dotfiles/
-├── README.md           # This file
-├── setup.sh            # Main installation script
-├── configs/            # Configuration files
-│   ├── git/            # Git configurations
-│   ├── shell/          # Shell configurations
-│   └── editors/        # Editor configurations
-└── install/            # Installation modules
-    ├── brew.sh         # Homebrew and applications
-    ├── shell.sh        # Shell setup (zsh + oh-my-zsh)
-    ├── node.sh         # Node.js development environment
-    ├── git.sh          # Git configuration
-    └── macos.sh        # macOS preferences
 
 ## Credits
 
