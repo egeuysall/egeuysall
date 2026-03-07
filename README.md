@@ -1,7 +1,5 @@
 # Ege Uysal
 
-I’m Ege Uysal, a developer passionate about backend systems, design, and minimalist productivity tools.
+Founder building SaaS products at 16. Currently building Ryva.
 
-I enjoy building apps with clean interfaces and fast, scalable code.
-
-I focus on learning deeply, creating consistently, and building tools that last.
+I care about fast systems, simple tools, and software that removes unnecessary work.
